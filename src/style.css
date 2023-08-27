@@ -1,4 +1,13 @@
 .root {
   box-sizing: border-box;
   display: block;
+  background-color: ##f8f9fa;
+}
+
+.app {
+  margin: 60px auto;
+  max-width: 800px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
 }
