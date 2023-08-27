@@ -3,156 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <title>Vanilla Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
   </head>
   <body>
-    <div id="frame">
-      <div class="app">
-        <div class="container">
-          <div class="weather">
-            <a
-              href="https://shecodes.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/images/logo.png" class="logo" alt="SheCodes Logo" />
-            </a>
-            <form>
-              <div class="row">
-                <div class="col-9">
-                  <input
-                    type="search"
-                    placeholder="Enter a City..."
-                    class="form-control search-input"
-                  />
-                </div>
-                <div class="col-3 p-0">
-                  <input
-                    type="submit"
-                    class="btn btn-primary w-100"
-                    value="Search"
-                  />
-                </div>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
               </div>
-            </form>
-            <div class="weather-info">
-              <div class="row">
-                <div class="col-6">
-                  <h1>Krefeld</h1>
-                  <ul>
-                    <li>
-                      <span> "Sunday" "17" ":" "58" </span>
-                      ", " "partly rain"
-                    </li>
-                    <li>
-                      "Humidity: "
-                      <strong> "80" "%" </strong>
-                      ", Wind:"
-                      <strong> "3.09" "km/h" </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-8">
-                  <div class="temperature-container d-flex justify-content-end">
-                    <canvas width="52" height="52"></canvas>
-                    <div>
-                      <span class="temperature">18</span>
-                      <span class="unit">°C</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
               </div>
             </div>
-            <div class="WeatherForecast row">
-              <div class="col"></div>
-                <div class="weatherforecastpreview">
-                  <div class="forecast-time">SUN</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">20°</span>
-                    <span class="forecast-temperature-min">13°</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="weatherforecastpreview">
-                  <div class="forecast-time">MON</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">21°</span>
-                    <span class="forecast-temperature-min">11°</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="weatherforecastpreview">
-                  <div class="forecast-time">TUE</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">21°</span>
-                    <span class="forecast-temperature-min">12°</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="weatherforecastpreview">
-                  <div class="forecast-time">WED</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">19°</span>
-                    <span class="forecast-temperature-min">11°</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                  <div class="weatherforecastpreview">
-                    <div class="forecast-time">THU</div>
-                    <canvas width="38" height="38"></canvas>
-                    <div class="forecast-temperature">
-                      <span class="forecast-temperature-max">20°</span>
-                      <span class="forecast-temperature-min">11°</span>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <footer>
-              "This project was coded by"
-              <a
-                href="https://www.shecodes.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Shecodes</a
-              >
-              "and is"
-              <a
-                href="https://github.com/Sonja40/vanilla-weather-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                >open-source on GitHub</a
-              >
-              "and
-              <a
-                href="https://main--charming-flan-74f14f.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >hosted on Netlify</a
-              >
-            </footer>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
           </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"> °C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <small>
+          <a
+            href="https://github.com/wecodeschool/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Matt Delac
+        </small>
       </div>
     </div>
     <script src="src/app.js"></script>
