@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="app">
+        <div class="container">
+          <div class="weather">
+            <form>
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Enter a City..."
+                    class="form-control search-input"
+                  />
+                </div>
+                <div class="col-3 p-0">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="weather-info">
+              <div class="row">
+                <div class="col-6">
+                  <h1>Krefeld</h1>
+                  <ul>
+                    <li>
+                      <span> "Monday" "14" ":" "24" </span>
+                      ", " "few clouds"
+                    </li>
+                    <li>
+                      "Humidity: "
+                      <strong> "64" "%" </strong>
+                      ", Wind:"
+                      <strong> "1.54" "km/h" </strong>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cpl-lg-6 col-md-6 col-sm-8">
+                  <div class="temperature-container d-flex justify-content-end">
+                    <canvas width="52" height="52"></canvas>
+                    <div>
+                      <span class="temperature">20</span>
+                      <span class="unit">°C</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="weather-forecast row">
+                <div class="col">
+                  <div class="weatherforecastpreview">
+                    <div class="forecast-time">Mon</div>
+                    <canvas width="38" height="38"></canvas>
+                  </div>
+                  <div class="foreact-temperature">
+                    <span class="weather-forecast-temperature-max">20°</span>
+                    <span class="weather-forecast-temperature-min">11°</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="weatherforecastpreview">
+                    <div class="forecast-time">Tue</div>
+                    <canvas width="38" height="38"></canvas>
+                  </div>
+                  <div class="foreact-temperature">
+                    <span class="weather-forecast-temperature-max">21°</span>
+                    <span class="weather-forecast-temperature-min">13°</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="weatherforecastpreview">
+                    <div class="forecast-time">Wed</div>
+                    <canvas width="38" height="38"></canvas>
+                  </div>
+                  <div class="foreact-temperature">
+                    <span class="weather-forecast-temperature-max">19°</span>
+                    <span class="weather-forecast-temperature-min">12°</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="weatherforecastpreview">
+                    <div class="forecast-time">Thu</div>
+                    <canvas width="38" height="38"></canvas>
+                  </div>
+                  <div class="foreact-temperature">
+                    <span class="weather-forecast-temperature-max">20°</span>
+                    <span class="weather-forecast-temperature-min">11°</span>
+                  </div>
+                  <div class="col">
+                    <div class="weatherforecastpreview">
+                      <div class="forecast-time">Fri</div>
+                      <canvas width="38" height="38"></canvas>
+                    </div>
+                    <div class="foreact-temperature">
+                      <span class="weather-forecast-temperature-max">23°</span>
+                      <span class="weather-forecast-temperature-min">15°</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
