@@ -24,29 +24,34 @@
       src="https://kit.fontawesome.com/c3debeb7cc.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>vanilla-weather-app</title>
   </head>
   <body>
     <div id="frame">
       <div class="app">
         <div class="container">
           <div class="weather">
-            <form>
+            <form id="search-bar">
               <div class="row">
                 <div class="col-9">
                   <input
+                    id="city-input"
                     type="search"
                     placeholder="Enter a City..."
                     class="form-control search-input"
                   />
                 </div>
                 <div class="col-3 p-0">
-                  <input
-                    type="submit"
+                  <button
+                    id="current-location"
+                    type="button"
                     class="btn btn-primary w-100"
                     value="Search"
-                  />
+                  >
+                    Current Location
+                  </button>
                 </div>
               </div>
             </form>
@@ -54,11 +59,11 @@
               <br />
               <div class="row">
                 <div class="col-6">
-                  <h1>Krefeld</h1>
+                  <h1 id="mainCity">Krefeld</h1>
                   <ul>
                     <li>
-                      <span> Monday 14:24 </span>
-                      , few clouds
+                      <span id="currentDate"> Monday 14:24 </span>
+                      <span id="description">, few clouds</span>
                     </li>
                     <li>
                       Humidity:
@@ -77,8 +82,13 @@
                     />
                     <br />
                     <div>
-                      <span class="temperature">20</span>
+                      <span class="temperature" id="current-temp">20</span>
                       <span class="unit">°C</span>
+                      <a class="celsius-linke" href="#" id="celsius-link">°C</a>
+                      <a class="icon">/</a>
+                      <a class="fahrenheit-linke" href="#" id="fahrenheit-link"
+                        >°F</a
+                      >
                     </div>
                   </div>
                 </div>
