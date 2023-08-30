@@ -39,8 +39,10 @@ function displayTemperature(response) {
 }
 
 let apiKey = "8429fab9a373o690ete5fa53ee0a6e14";
+let city = "Lisbon";
+let units = "metric";
 let apiUrl =
-  "https://api.shecodes.io/weather/v1/current?query=Lisbon&key=8429fab9a373o690ete5fa53ee0a6e14&units=metric";
+  "https://api.shecodes.io/weather/v1/current?query=${city}&key=8429fab9a373o690ete5fa53ee0a6e14&units=${units}";
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
