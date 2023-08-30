@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="src/style.css" />
-    <script src="src/appnew.js"></script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,7 +25,6 @@
     ></script>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
     <title>vanilla-weather-app</title>
   </head>
@@ -60,17 +59,19 @@
               <br />
               <div class="row">
                 <div class="col-6">
-                  <h1 id="mainCity">Krefeld</h1>
+                  <h1 id="city"></h1>
                   <ul>
                     <li>
                       <span id="currentDate">Monday 14:24</span>
-                      <span id="description">, few clouds</span>
+                      ,
+                      <span class="description" id="description"></span>
                     </li>
                     <li>
                       Humidity:
-                      <strong> 64% </strong>
-                      , Wind:
-                      <strong> 1.54 km/h </strong>
+                      <strong id="humidity"></strong>
+                      %, Wind:
+                      <strong id="wind"></strong>
+                      km/h
                     </li>
                   </ul>
                 </div>
@@ -83,7 +84,7 @@
                     />
                     <br />
                     <div>
-                      <span class="temperature" id="current-temp">20</span>
+                      <span class="temperature" id="current-temp"></span>
                       <a class="celsius-linke" href="#" id="celsius-link">°C</a>
                       <a class="icon">/</a>
                       <a class="fahrenheit-linke" href="#" id="fahrenheit-link"
@@ -190,5 +191,6 @@
         </div>
       </div>
     </div>
+    <script src="src/appnew.js"></script>
   </body>
 </html>
