@@ -24,7 +24,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  //console.log(response.data);
   let temperatureElement = document.querySelector("#current-temp");
   let cityElement = document.querySelector("#city");
   let weatherElement = document.querySelector("#description");
