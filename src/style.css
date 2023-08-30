@@ -14,12 +14,6 @@ div {
   display: block;
 }
 
-a {
-  color: #0d6efd;
-  color: var(--bs-link-color);
-  text-decoration: underline;
-}
-
 .weather {
   background: #fcf7f7;
   border-radius: 16px;
@@ -188,16 +182,6 @@ canvas {
   margin-left: 10px;
 }
 
-.unit {
-  color: #212121;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 36px;
-  line-height: 1;
-  position: relative;
-  top: -34px;
-}
-
 .weatherforecast {
   border-bottom: 1px solid #f9f7fe;
   margin: 40px 0;
@@ -254,10 +238,37 @@ img {
 }
 
 .celsius-linke {
-  color: #885df1;
+  color: rgb(115, 115, 230);
   text-decoration: none;
+  margin-left: -5px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  line-height: 1;
+  position: relative;
+  top: -34px;
 }
+
 .fahrenheit-linke {
-  color: #885df1;
+  color: rgb(226, 147, 147);
   text-decoration: none;
+  margin-left: -5px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  line-height: 1;
+  position: relative;
+  top: -34px;
+}
+
+.icon {
+  color: rgba(39, 33, 66, 0.4);
+  text-decoration: none;
+  margin-left: -5px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  line-height: 1;
+  position: relative;
+  top: -34px;
 }
