@@ -45,16 +45,13 @@ function displayTemperature(response) {
 
 function search(city) {
   let apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
-  let city = "Paris";
-  let units = "metric";
-  let apiUrl =
-    "https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
 
-function search(event) {
+function handleSubmit(event) {
   event.preventDefault();
-  let cityInputElement = document.querySelector("#inputcity");
+  let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
 
