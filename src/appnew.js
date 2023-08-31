@@ -44,6 +44,12 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
+function search(event) {
+  event.preventDefault();
+  let cityInputElemet = document.querySelector("#city-input");
+  console.log(cityInputElemet);
+}
+
 let apiKey = "8429fab9a373o690ete5fa53ee0a6e14";
 let city = "Paris";
 let units = "metric";
@@ -51,3 +57,6 @@ let apiUrl =
   "https://api.shecodes.io/weather/v1/current?query=Tokyo&key=8429fab9a373o690ete5fa53ee0a6e14&units=metric";
 
 axios.get(apiUrl).then(displayTemperature);
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);
