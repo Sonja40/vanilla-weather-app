@@ -191,6 +191,7 @@ canvas {
   font-weight: 549;
   line-height: 1;
   margin-left: 10px;
+  text-decoration: none;
 }
 
 .weatherforecast {
@@ -258,6 +259,11 @@ img {
   line-height: 1;
   position: relative;
   top: -34px;
+  cursor: default;
+}
+
+.celsius-linke:hover {
+  text-decoration: none;
 }
 
 .fahrenheit-linke {
@@ -270,6 +276,11 @@ img {
   line-height: 1;
   position: relative;
   top: -34px;
+  cursor: default;
+}
+
+.fahrenheit-linke:hover {
+  text-decoration: none;
 }
 
 .icon {
