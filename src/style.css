@@ -1,27 +1,20 @@
 body {
-  background-color: #f9f7fe;
-  color: #212529;
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  background-image: url("https://cdn.pixabay.com/photo/2019/03/28/10/19/sunset-4086848_1280.jpg");
+  background-size: 105%;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  display: block;
-}
-
-div {
-  display: block;
 }
 
 .weather {
-  background: #eee8e8;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgba(53, 26, 116, 0.09);
-  color: #878787;
+  color: #5a5a5a;
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   padding: 40px;
-  background-color: #e9d4f3;
+  background-color: #fad6de;
+  opacity: 0.7;
 }
 
 .app {
@@ -35,13 +28,8 @@ div {
   width: 100%;
 }
 
-.col-9 {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
 .search-input {
-  background: #f9f7fe;
+  background: #e3e1e9;
   border: none;
   border-radius: 6px;
   color: rgba(39, 33, 66, 0.4);
@@ -76,24 +64,6 @@ form {
   height: 50px;
 }
 
-.p-0 {
-  padding: 0 !important;
-}
-
-.col-3 {
-  flex: 0 0 auto;
-  width: 25%;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.w-100 {
-  width: 100% !important;
-}
-
 button {
   background-color: #885df1;
   width: 90%;
@@ -101,6 +71,7 @@ button {
 }
 
 .btn btn-primary w-100 {
+  background-color: #f65282;
   font-size: 20px;
   font-weight: 700;
   padding: 10px 0;
@@ -114,11 +85,6 @@ button {
     box-shadow 0.15s ease-in-out;
   user-select: none;
   vertical-align: middle;
-}
-
-.col-6 {
-  flex: 0 0 auto;
-  width: 50%;
 }
 
 h1 {
@@ -167,22 +133,8 @@ li {
   margin-top: 30px;
 }
 
-.justify-content-end {
-  justify-content: flex-end !important;
-}
-
-.d-flex {
-  display: flex !important;
-}
-
-canvas {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  margin: 10px 0;
-}
-
 .temperature {
-  color: #212121;
+  color: #535353;
   font-size: 80px;
   font-weight: 549;
   line-height: 1;
@@ -238,7 +190,7 @@ footer a {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.6;
   color: rgb(14, 72, 222);
 }
 
@@ -296,6 +248,11 @@ img {
   top: -34px;
 }
 
+.active {
+  color: #280128;
+  cursor: default;
+  text-decoration: none;
+}
 .active:hover {
   text-decoration: none;
 }
