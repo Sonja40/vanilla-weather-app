@@ -116,10 +116,6 @@ button {
   vertical-align: middle;
 }
 
-.weather-info {
-  margin-top: 20px;
-}
-
 .col-6 {
   flex: 0 0 auto;
   width: 50%;
@@ -199,6 +195,7 @@ canvas {
   margin: 40px 0;
   padding-bottom: 50px;
   text-align: center;
+  display: block;
 }
 
 footer {
@@ -207,7 +204,6 @@ footer {
   line-height: 18px;
   margin-top: 40px;
   text-align: center;
-  display: block;
 }
 
 footer a {
@@ -229,7 +225,7 @@ footer a {
 
 .weatherforecast canvas {
   display: block;
-  margin: 20px auto;
+  margin: 20px;
 }
 
 .forecast-temperature {
