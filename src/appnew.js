@@ -40,7 +40,6 @@ function displayForecast() {
           <span class="weather-forecast-temperature-min">11°</span>
         </div>
      </div>
-
   `;
   });
 
