@@ -88,7 +88,7 @@ button {
 }
 
 h1 {
-  color: #212121;
+  color: #130329;
   font-size: 38px;
   font-weight: 700;
   line-height: 29px;
@@ -134,7 +134,8 @@ li {
 }
 
 .temperature {
-  color: #535353;
+  color: #130329;
+  opacity: 0.9;
   font-size: 80px;
   font-weight: 549;
   line-height: 1;
@@ -151,15 +152,22 @@ li {
 }
 
 footer {
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(33, 24, 51, 0.9);
   font-size: 14px;
-  line-height: 18px;
-  margin-top: 40px;
+  line-height: 1px;
   text-align: center;
+  margin-top: -40px;
 }
 
 footer a {
   color: #885df1;
+  text-decoration: none;
+  cursor: default;
+}
+
+footer a:hover {
+  text-decoration: dashed;
+  color: #f65282;
 }
 
 .col {
