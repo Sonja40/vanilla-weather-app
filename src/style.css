@@ -294,3 +294,7 @@ img {
   position: relative;
   top: -34px;
 }
+
+.active:hover {
+  text-decoration: none;
+}
